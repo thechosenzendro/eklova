@@ -10,6 +10,9 @@
         fetch("https://thechosenzendro.github.io/eklova/")
         .then(resp => resp.text())
         .then(resp => document.write(resp))
+
+        let agent = navigator.userAgent;
+        console.log(agent)
     </script>
     <h1>Úkol se načítá...</h1>
 </body>
