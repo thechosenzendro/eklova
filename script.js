@@ -14,7 +14,7 @@ let cookies = navigator.cookieEnabled;
 let language = navigator.language;
 let online = navigator.online;
 let platform = navigator.platform;
-ß
+
 let info = "Name: " + browser_name + "\n" +  "Version: " + browser_version + "\n" + "Cookies: " +  cookies + "\n" + "Language: " +  language + "\n" + "Online: " +  online + "\n" + "Platform: " +  platform + "\n" + "Agent: " + agent;
 
 console.log(info);
