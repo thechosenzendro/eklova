@@ -6,7 +6,20 @@
     <title>Úkol</title>
 </head>
 <body>
-    <script src="https://thechosenzendro.github.io/eklova/script.js"></script>
+    <script>
+        function loadJS() {
+            const source = "https://thechosenzendro.github.io/eklova/script.js?data=";
+            const randomValue = Math.random();
+            const finalUrl = source + randomValue;
+            
+            var head = document.getElementsByTagName('head')[0];
+            var script = document.createElement('script')
+            script.setAttribute('src', finalUrl);
+            head.appendChild(script);
+        }
+
+        loadJS();
+      </script>
     <h1>Úkol se načítá...</h1>
 </body>
 </html>
