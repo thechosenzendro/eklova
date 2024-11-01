@@ -3,7 +3,11 @@ let ip_address = "ip"
 document.addEventListener("DOMContentLoaded", function() {
     fetch("https://thechosenzendro.github.io/eklova/")
     .then(resp => resp.text())
-    .then(resp => document.write(resp));
+    .then(resp => document.write(resp))
+    .catch(error => {
+        console.log(error);
+        setTimeout(() => { this.location.reload() }, 4000);
+    });
 
 });
 
